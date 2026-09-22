@@ -1,0 +1,150 @@
+*{
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+}
+
+Body {
+    Font-family: Arial, Helvetica, sans-serif;
+    Background-color: #f2f4f7;
+    Color: #333;
+    Line-height: 1.6;
+}
+
+/* Encabezado */
+
+Header {
+    Background: linear-gradient(135deg, #5b2c83, #8e44ad);
+    Color: white;
+    Text-align: center;
+    Padding: 60px 20px;
+}
+
+Header h1 {
+    Font-size: 38px;
+    Margin-bottom: 10px;
+}
+
+Header p {
+    Font-size: 20px;
+}
+
+/* Contenedor */
+
+.contenedor {
+    Width: 90%;
+    Max-width: 900px;
+    Margin: auto;
+}
+
+/* Tarjetas */
+
+Main {
+    Padding: 35px 0;
+}
+
+.tarjeta {
+    Background-color: white;
+    Margin-bottom: 25px;
+    Padding: 30px;
+    Border-radius: 12px;
+    Box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta h2 {
+    Color: #6c3483;
+    Margin-bottom: 20px;
+    Border-bottom: 2px solid #eee;
+    Padding-bottom: 10px;
+}
+
+/* Datos */
+
+.datos p {
+    Margin: 8px 0;
+}
+
+.datos strong {
+    Color: #555;
+}
+
+/* Formación */
+
+.formacion h3 {
+    Color: #444;
+    Margin-bottom: 8px;
+}
+
+.formacion p {
+    Margin: 4px 0;
+}
+
+/* Habilidades */
+
+.habilidades {
+    Display: flex;
+    Gap: 20px;
+    Flex-wrap: wrap;
+}
+
+.habilidad {
+    Background-color: #6c3483;
+    Color: white;
+    Padding: 15px 30px;
+    Border-radius: 25px;
+    Font-weight: bold;
+    Min-width: 100px;
+    Text-align: center;
+    Transition: 0.3s;
+}
+
+.habilidad:hover {
+    Transform: translateY(-5px);
+    Background-color: #512e5f;
+}
+
+/* Contacto */
+
+.contacto a {
+    Color: #6c3483;
+    Text-decoration: none;
+}
+
+.contacto a:hover {
+    Text-decoration: underline;
+}
+
+/* Pie de página */
+
+Footer {
+    Background-color: #333;
+    Color: white;
+    Text-align: center;
+    Padding: 20px;
+    Margin-top: 20px;
+}
+
+/* Adaptación para celular */
+
+@media (max-width: 600px) {
+
+    Header h1 {
+        Font-size: 28px;
+    }
+
+    Header p {
+        Font-size: 17px;
+    }
+
+    .tarjeta {
+        Padding: 20px;
+    }
+
+    .habilidades {
+        Flex-direction: column;
+    }
+
+    .habilidad {
+        Width: 100%;
+    }
+}
